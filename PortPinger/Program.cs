@@ -13,6 +13,7 @@ namespace PortPinger
 
         private static string _address;
         private static Dictionary<int, bool> _openPorts;
+        private static double _counter = 0.0;
 
         static void Main(string[] args)
         {
@@ -21,12 +22,15 @@ namespace PortPinger
             _address = Console.ReadLine();
             _openPorts = new Dictionary<int, bool>();
 
-            var ports = Enumerable.Range(1, 1023);
+            var ports = Enumerable.Range(1, 1023).ToList();
 
             Parallel.ForEach(ports, (port) =>
             {
 
+                _counter++;
+                double percent = _counter / 1023.0;
                 _openPorts.Add(port, Ping(port));
+                //Console.Write($"\r{percent}% done");
 
             });
 
@@ -42,14 +46,14 @@ namespace PortPinger
                 {
 
                     client.Connect(_address, port);
-                    Console.WriteLine($"{port} is open.");
+                    //Console.WriteLine($"{port} is open.");
                     return true;
 
                 }
                 catch
                 {
 
-                    Console.WriteLine($"{port} is closed");
+                    //Console.WriteLine($"{port} is closed");
                     return false;
 
                 }
