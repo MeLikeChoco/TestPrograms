@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SieveOfEratosthenes", "Siev
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PortPinger", "PortPinger\PortPinger.csproj", "{4A2B43BB-9E67-46CC-BA7F-A1C9DF9FB650}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LevenshteinDistance", "LevenshteinDistance\LevenshteinDistance.csproj", "{94151131-5888-4DED-84C7-5A846FEF7FE1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{4A2B43BB-9E67-46CC-BA7F-A1C9DF9FB650}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4A2B43BB-9E67-46CC-BA7F-A1C9DF9FB650}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4A2B43BB-9E67-46CC-BA7F-A1C9DF9FB650}.Release|Any CPU.Build.0 = Release|Any CPU
+		{94151131-5888-4DED-84C7-5A846FEF7FE1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94151131-5888-4DED-84C7-5A846FEF7FE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94151131-5888-4DED-84C7-5A846FEF7FE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94151131-5888-4DED-84C7-5A846FEF7FE1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
